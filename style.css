@@ -839,6 +839,7 @@ i::before {
     margin-top: 10px;
   }
   .nav-line {
+    color: #000;
     display: block;
     width: 100%;
     position: relative;
