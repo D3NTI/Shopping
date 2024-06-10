@@ -23,18 +23,27 @@ body {
 }
 
 li {
-  margin-left: 54px;
   list-style: none;
+}
+
+.opened {
+  display: none;
+}
+
+ul.open {
+  display: flex !important;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 1%;
+  width: 97%;
 }
 
-ul {
+.version {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,8 +56,13 @@ ul {
   align-items: center;
 }
 
-#common {
+.common {
   text-decoration: none;
+}
+
+#btn {
+  display: none;
+  text-align: center;
 }
 
 .nav-butt a:hover {
@@ -57,6 +71,7 @@ ul {
 }
 
 #sign-up {
+  text-wrap: nowrap;
   padding: 9px;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -73,11 +88,12 @@ ul {
 
 .nav-butt {
   display: flex;
+  width: 70%;
 }
 
 a {
   color: black;
-  font-size: 22px;
+  font-size: 18px;
   padding: 7px;
 }
 
@@ -92,8 +108,6 @@ a {
 
 .preview-container {
   margin-top: 67px;
-  margin-left: 5%;
-  margin-right: 5%;
   width: 90%;
 }
 
@@ -575,27 +589,19 @@ i::before {
   .svg {
     margin-left: 7px;
   }
-  li {
+  .version {
     display: none;
   }
   .preview {
     position: relative;
     background-color: #f4f6f5;
     border-radius: 59px;
-    width: 71%;
+    width: 68%;
     display: flex;
-    padding: 20% 60px;
+    padding: 20% 50px;
   }
   #lady {
     display: none;
-    width: 60%;
-    margin-top: 38px;
-    height: fit-content;
-    position: absolute;
-    top: 107px;
-    left: 140px;
-    z-index: 0;
-    opacity: 42%;
   }
   #ptx {
     font-size: 26px;
@@ -613,9 +619,6 @@ i::before {
     margin-top: 32px;
     z-index: 1;
   }
-}
-
-@media (max-width: 768px) {
   .shops {
     display: flex;
     justify-content: center;
@@ -625,9 +628,6 @@ i::before {
     flex-wrap: wrap;
     margin-left: 5%;
   }
-}
-
-@media (max-width: 768px) {
   .exaple-txt h1 {
     font-size: 28px;
     font-weight: bolder;
@@ -655,9 +655,6 @@ i::before {
     margin-top: 13px;
     margin-left: 0px;
   }
-}
-
-@media (max-width: 768px) {
   .payday-img {
     width: 70%;
     margin-top: 30px;
@@ -696,9 +693,6 @@ i::before {
     width: 92%;
     margin: 0px 4%;
   }
-}
-
-@media (max-width: 768px) {
   .young-card-cont {
     width: 92%;
     margin: 0px 4%;
@@ -727,9 +721,6 @@ i::before {
     position: relative;
     right: 30px;
   }
-}
-
-@media (max-width: 768px) {
   .app-dowland {
     display: flex;
     margin-top: 60px;
@@ -766,9 +757,6 @@ i::before {
     width: 60%;
     display: none;
   }
-}
-
-@media (max-width: 768px) {
   .community h1 {
     color: #fff;
     font-size: 30px;
@@ -801,9 +789,6 @@ i::before {
     padding: 6px 18px;
     text-decoration: none;
   }
-}
-
-@media (max-width: 768px) {
   /* footer code */
   footer {
     background-color: #000;
@@ -852,5 +837,49 @@ i::before {
   }
   .column a {
     margin-top: 10px;
+  }
+  .nav-line {
+    display: block;
+    width: 100%;
+    position: relative;
+    border: none;
+    padding: 0px;
+    background: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #btn {
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .nav-butt {
+    width: 70%;
+    border: 0px solid;
+    display: flex;
+    justify-content: end;
+  }
+  .preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .opened {
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 91px;
+    z-index: 3;
+    border-radius: 4px;
+    width: 97%;
+  }
+  .opened li a {
+    text-decoration: none;
+    padding: 10px 60px;
+  }
+  .opened li {
+    padding: 20px 0px;
   }
 }
