@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="shortcut icon" href="iconka.png">
     <title>Fashion</title>
 </head>
 
@@ -30,7 +31,7 @@
                     <li><a class="common" href="">FASHION</a></li>
                     <li><a class="common" href="">FAVOURITE</a></li>
                     <li><a class="common" href="">LIFESTYLE</a></li>
-                    <li><a id="sign-up" href="">SIGN UP</a></li>
+                    <li><button type="button" class="sign-up" id="sign-up" href="">SIGN UP</button></li>
                 </ul>
                 <button id="btn" class="nav-line">&#8801;</button>
             </div>
@@ -41,7 +42,7 @@
         <li><a class="com" href="">FASHION</a></li>
         <li><a class="com" href="">FAVOURITE</a></li>
         <li><a class="com" href="">LIFESTYLE</a></li>
-        <li><a id="sign-up" href="">SIGN UP</a></li>
+        <li><button type="button" class="sign-up" id="sign-up" href="">SIGN UP</button></li>
     </ul>
 
 
@@ -66,7 +67,6 @@
         <div class="shops">
             <img id="HM" src="Hm.png" alt="" />
             <img id="OBEY" src="OBEY.png" alt="" />
-            <img id="Shopi" src="Shopi.png" alt="" />
             <img id="Lacoste" src="Lacoste.png" alt="" />
             <img id="Levi" src="Levi.png" alt="" />
             <img id="Amazon" src="amazon.png" alt="" />
@@ -279,7 +279,28 @@
 
 
 
+
+
     </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <form class="form" method="POST">
+        <div class="name">
+            <h1>SIGN UP</h1>
+        </div>
+
+        <div class="penis">
+            <div class="form-reg">
+                <label for="fgmail">LOGIN</label>
+                <input id="email" type="text" required>
+                <label for="pass">PASSWORD</label>
+                <input id="pass" type="password">
+                <a href="https://learning-agreement.eu/privacy-policy">*privacy-policy</a>
+            </div>
+            <button id="endreg" type="submit">SIGN UP</button></div>
+    </form>
+
+
 
     <script src="main.js"></script>
 </body>

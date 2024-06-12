@@ -73,6 +73,7 @@ ul.open {
 #sign-up {
   text-wrap: nowrap;
   padding: 9px;
+  font-size: 16px;
   background-color: rgb(255, 255, 255);
   color: black;
   text-decoration: none;
@@ -109,6 +110,7 @@ a {
 .preview-container {
   margin-top: 67px;
   width: 90%;
+  margin-left: 4%;
 }
 
 .preview {
@@ -580,6 +582,114 @@ i::before {
   color: #fff;
 }
 
+form {
+  width: 40%;
+  background-color: #fff;
+  border: 5px black solid;
+  border-radius: 9px;
+  box-shadow: 0px 0px 20px 0px rgba(201, 201, 201, 0.75) inset;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(201, 201, 201, 0.75) inset;
+  -moz-box-shadow: 0px 0px 20px 0px rgba(201, 201, 201, 0.75) inset;
+  padding: 56px 4%;
+  position: fixed;
+  top: 15%;
+  left: 26%;
+  display: none;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+}
+
+.name h1 {
+  font-size: 62px;
+}
+
+.form-reg {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-reg input {
+  border: 2px black solid;
+  width: 100%;
+  font-size: 20px;
+  padding: 2%;
+}
+
+.form-reg label {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.form-reg a {
+  text-decoration: none;
+  font-size: 11;
+  font-weight: lighter;
+}
+
+#endreg {
+  text-wrap: nowrap;
+  padding: 9px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  text-decoration: none;
+  border: 1px black solid;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#endreg:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+form.visible {
+  display: flex;
+  flex-direction: column;
+}
+
+.penis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 1000;
+}
+
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.form.visible,
+.overlay.visible {
+  display: block;
+}
+
 @media (max-width: 768px) {
   #logo {
     font-size: 34px;
@@ -606,6 +716,9 @@ i::before {
   #ptx {
     font-size: 26px;
     display: block;
+  }
+  .preview-container {
+    margin-left: 0px;
   }
   #ptxt {
     font-size: 22px;
@@ -882,5 +995,37 @@ i::before {
   }
   .opened li {
     padding: 20px 0px;
+  }
+  .form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+  }
+  .form-reg {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  form {
+    width: 100%;
+    background-color: #fff;
+    border: 5px black solid;
+    border-radius: 9px;
+    box-shadow: 0px 0px 20px 0px rgba(201, 201, 201, 0.75) inset;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(201, 201, 201, 0.75) inset;
+    -moz-box-shadow: 0px 0px 20px 0px rgba(201, 201, 201, 0.75) inset;
+    padding: 56px 1%;
+    position: fixed;
+    top: 15%;
+    left: 26%;
+    display: none;
   }
 }
